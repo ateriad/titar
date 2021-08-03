@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.15.7-alpine
+    container_name: titar_nginx
+    volumes:
+      - ./:/app
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/logs/:/var/log/nginx/
+    ports:
+      - ${APP_EXPOSED_PORT:-0}:80
+    working_dir: /app
+    restart: unless-stopped
+    depends_on:
+      - php
+
+  php:
+    build: ./docker/php/fpm
+    image: titar_php
+    container_name: titar_php
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ~/.ssh:/root/.ssh
+    depends_on:
+      - redis
+      - mysql
+
+  redis:
+    image: redis:5.0-alpine3.8
+    container_name: titar_redis
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:${REDIS_EXPOSED_PORT:-0}:6379
+
+  mysql:
+    image: mysql:5.7.27
+    container_name: titar_mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_DATABASE=${DB_DATABASE:-app}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD:-secret}
+    ports:
+      - 127.0.0.1:${DB_EXPOSED_PORT:-0}:3306
+    volumes:
+      - ./docker/mysql:/var/lib/mysql

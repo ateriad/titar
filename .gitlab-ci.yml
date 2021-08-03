@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - ssh s1vm13 -tt 'bash -s' < .gitlab-deploy.sh

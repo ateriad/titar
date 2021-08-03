@@ -1,0 +1,291 @@
+#premium {
+    margin-top: 0 !important;
+}
+
+.row {
+    direction: rtl;
+}
+
+.heading {
+    width: 100%;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none !important;
+    color: #68b2b2;
+}
+
+a:active, a:focus {
+    color: #68b2b2 !important;
+}
+
+.socialLinks {
+    float: left;
+    text-align: left;
+}
+
+.header-logo {
+    width: 110px;
+    height: 62px;
+}
+
+.sticky-container .topnav {
+    max-height: 62px;
+}
+
+.medium-horizontal {
+    max-height: 62px;
+    direction: rtl;
+    text-align: right;
+}
+
+.ls-slide .ls-bg {
+    width: 1920px !important;
+    height: auto !important;
+}
+
+.ls-slide h3 {
+    right: 50px !important;
+    top: 135px !important;
+    padding: 15px;
+    color: #f0f0f0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    direction: rtl;
+}
+
+.ls-slide p {
+    font-weight: 600;
+    right: 62px !important;
+    top: 200px !important;
+    left: auto !important;
+    opacity: 1 !important;
+    width: 450px !important;
+    color: #f0f0f0 !important;
+    font-size: 14px;
+    font-family: IRANSans !important;
+    direction: rtl;
+}
+
+.ls-slide a {
+    float: right;
+    text-align: center;
+    background: #444;
+    color: #ffffff;
+    font-family: IRANSans !important;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 10% !important;
+}
+
+.ls-slide .button {
+    right: 63px !important;
+    top: 315px !important;
+    left: auto !important;
+}
+
+.category-arrow {
+    display: inline-block;
+    float: left;
+    direction: ltr;
+}
+
+.cat-head {
+    display: inline-block;
+}
+
+.owl-carousel.owl-loaded {
+    padding-bottom: 30px;
+}
+
+footer .logos {
+    text-align: right;
+    margin: 15px 0;
+}
+
+footer .logos img {
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+    background: #6c6c6c;
+    border-radius: 3px;
+}
+
+footer .logos h5 {
+    margin-bottom: 20px !important;
+}
+
+#footer-bottom img {
+    width: 96px;
+    height: 24px;
+}
+
+#footer-bottom .text-center {
+    direction: rtl;
+}
+
+footer a {
+    color: #68b2b2;
+    font-size: 15px;
+}
+
+footer li {
+    padding-bottom: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+
+.team-member {
+    margin: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: .25rem !important;
+}
+
+.team-member img {
+    width: 100%;
+    height: 295px;
+}
+
+.team-member .member-detail {
+    padding: 15px;
+}
+
+.app-img {
+    height: auto !important;
+    width: auto !important;
+}
+
+.profile-sidebar {
+    width: 100%;
+}
+
+.profile-sidebar a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.profile-sidebar .active {
+    background: #68b2b2;
+    color: #fff;
+}
+
+.profile-card {
+    padding: 0 10px 10px 0;
+}
+
+.balance {
+    background: #68b2b2;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.profile-card-content {
+    margin-bottom: 30px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px !important;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.svg-inline--fa {
+    vertical-align: -0.4em;
+    color: #c8c8c8;
+}
+
+.video-single-img {
+    position: relative;
+    width: 100%;
+}
+
+.video-single-img img {
+    position: relative;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.video-single-img svg {
+    margin-left: 5px;
+    bottom: 2px;
+    position: relative;
+}
+
+.video-single-img div {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video-single-img:hover img {
+    opacity: 0.5;
+}
+
+.video-single-img:hover div {
+    opacity: 1;
+}
+
+.post-title span svg {
+    position: relative;
+    bottom: 3px;
+}
+
+.green-btn {
+    background: #0E9A00;
+    color: #ffffff;
+}
+
+.red-btn {
+    background: #990000;
+    color: #ffffff;
+}
+
+.button, .button:hover, .button:focus, .button:active {
+    background: #6691a1 !important;
+    color: #ffffff;
+}
+
+.alert {
+    border-radius: 0 !important;
+}
+
+textarea.form-control {
+    border-radius: 0 !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+    #layerslider {
+        height: 300px !important;
+    }
+
+    .ls-slide .ls-bg{
+        width: 130% !important;
+    }
+
+    .ls-bg {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+}

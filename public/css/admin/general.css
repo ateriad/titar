@@ -1,0 +1,31 @@
+.breadcrumb {
+    direction: rtl;
+    text-align: right;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.mar-top-20 {
+    margin-top: 20px;
+}
+
+.logs-box {
+    text-align: left;
+    direction: ltr;
+    background: #f5f5f5;
+    padding: 15px;
+}
+
+.line-text {
+    margin: 10px;
+}
