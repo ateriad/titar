@@ -26,7 +26,7 @@ services:
       - redis
 
   mysql:
-    image: ghcr.io/getimages/mysql:8.0.25
+    image: ghcr.io/getimages/mysql:5.7.32
     restart: always
     environment:
       - MYSQL_DATABASE=${DB_DATABASE:-app}
